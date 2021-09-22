@@ -1,0 +1,125 @@
+/* Meniul de navigare */
+.meniu {
+    overflow: hidden;
+    background-color:#cd7f52;
+  }
+  
+  /* Linkuri de navigare */
+  .meniu a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Meniul de sub-navigare */
+  .subnavigare {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Butoanele pt subnavigareigare */
+  .subnavigare .subsubnav {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Adaugam culoare pt linkurile de navigare */
+  .meniu a:hover, .subnavigare:hover .subsubnav {
+    background-color:#ffb366;
+  }
+  
+  /* Stilează conținutul subnavigare - poziția absolută*/
+  .subnavigare-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color:#ffb366;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Stilizarea linkurile subnavigare */
+  .subnavigare-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Adăugarea unei culori de fundal la cursor */
+  .subnavigare-content a:hover {
+    background-color: #eee;
+    color: #331a00;
+  }
+  
+  /*Când se muta mouse-ul peste subnavigare, se deschide conținutul subnavigare */
+  .subnavigare:hover .subnavigare-content {
+    display: block;
+  }
+
+  body
+  {
+    background-image: url("https://i.pinimg.com/originals/23/94/76/239476523cc4b265fbf8f106fa967904.png"); /* imaginea folosita */
+    background-position: center; /* centrarea img */
+    background-repeat: no-repeat; /* ca img sa nu se repete */
+    background-size: cover; /* Redimensionarea imaginii de fundal pentru a acoperi întregul container */
+  }
+  p {
+    text-indent: 60px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    word-spacing: -2px;
+    text-align:justify;
+  }
+
+ 
+
+
+
+  img:hover {
+    transform: scaleX(-1); /*Întoarceți o imagine Mutați mouse-ul peste imagine:*/
+
+  }
+
+  img {
+    border: 2px solid #ffcc80; /*proprietate de margine pentru a modifica imaginile în miniatură.*/
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.rotate {    /*seteaza pagina ferm ,ca textul sa nu se raspandesca pe prea mult spatiu*/
+    transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.dialog {
+    text-indent: 60px;
+    letter-spacing: 0.5px;
+    line-height: 2;
+}
+.eminescu
+{
+    float: right;
+
+}
+.taboptiuni {
+    float: center;
+}
+
+.lista
+{
+    float: center;
+}
